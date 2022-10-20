@@ -152,7 +152,7 @@ function td(content, className="")
 		date = new Date();
 			var minutes = date.getMinutes();
 			var hours = date.getHours();
-			if(document.getElementsByName("p_or_d")[0].value === "pickup") {
+			if(orderType === "pickup") {
 				minutes = minutes + 20;
 			} else {
 				minutes = minutes + 40;
